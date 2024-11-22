@@ -2,15 +2,15 @@ import { loadHTML } from "./helpers/loadHTML";
 import { loadScript } from "./helpers/loadScript";
 
 // Define the paths for each page's content
-const HEADER_PATH = "/public/components/header/header.html";
-const FOOTER_PATH = "/public/components/footer/footer.html";
+const HEADER_PATH = "/components/header/header.html";
+const FOOTER_PATH = "/components/footer/footer.html";
 
 //HOME PAGE
-const HOME_PATH = "/public/pages/home/home.html";
-const BANNER_PATH = "/public/pages/home/banner-carousel/banner-carousel.html";
+const HOME_PATH = "/pages/home/home.html";
+const BANNER_PATH = "/pages/home/banner-carousel/banner-carousel.html";
 
 // ABOUT PAGE
-const ABOUT_PATH = "/public/pages/about/about.html";
+const ABOUT_PATH = "/pages/about/about.html";
 
 export function loadPageContent(slug) {
   loadHTML(HEADER_PATH, "header");
