@@ -26,6 +26,7 @@ export default defineConfig({
   ],
   // Ensure Vite knows where to find static files
   publicDir: 'public', // The 'public' folder is where static assets like images and raw files are served from
+  base: '/', // this tells Vite to use relative paths for assets
   build: {
     outDir: 'dist',  // Output directory for the build
     assetsDir: 'assets', // Directory where assets (like images) are placed in the build
