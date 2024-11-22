@@ -2,8 +2,6 @@ import { defineConfig } from "vite";
 import viteImagemin from "vite-plugin-imagemin";
 
 export default defineConfig({
-  // Ensure Vite knows where to find static files
-  publicDir: 'public', // The 'public' folder is where static assets like images and raw files are served from
   server: {
     open: true, // Automatically opens the browser
   },
@@ -26,15 +24,10 @@ export default defineConfig({
       },
     }),
   ],
+  // Ensure Vite knows where to find static files
+  publicDir: 'public', // The 'public' folder is where static assets like images and raw files are served from
   build: {
     outDir: 'dist',  // Output directory for the build
     assetsDir: 'assets', // Directory where assets (like images) are placed in the build
-    rollupOptions: {
-      input: {
-        main: '/src/index.html',
-        about: '/src/pages/about.html',
-        contact: '/src/pages/contact.html',
-      },
-    },
   },
 });
