@@ -31,4 +31,9 @@ export default defineConfig({
     outDir: 'dist',  // Output directory for the build
     assetsDir: 'assets', // Directory where assets (like images) are placed in the build
   },
+  resolve: {
+    alias: {
+      '/src': './src'
+    },
+  },
 });
